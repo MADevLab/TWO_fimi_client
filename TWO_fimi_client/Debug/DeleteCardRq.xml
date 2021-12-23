@@ -1,0 +1,11 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:DeleteCardRq>
+         <fimi:Request>
+            <fimi1:CardUID>D2A4CB7D0A22029DE053053010ACDDDC</fimi1:CardUID>
+	    <!--<fimi1:Force>1</fimi1:Force>-->
+         </fimi:Request>
+      </fimi:DeleteCardRq>
+   </soap:Body>
+</soap:Envelope>

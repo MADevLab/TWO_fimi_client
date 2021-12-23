@@ -1,0 +1,14 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:DeletePersonRq>
+         <fimi:Request>
+	    <!--Constants-->
+            <!--<fimi1:InstName>KKB</fimi1:InstName>--><!--Optionaly. Implementation inside TWO-->
+            <!--Mandatory:-->
+            <!--<fimi1:Id>1000037</fimi1:Id>--><!--Not send. Implementation inside TWO--><!--+-->
+	    <fimi1:PersonExtId>45454556</fimi1:PersonExtId><!--KKBID-->            
+         </fimi:Request>
+      </fimi:DeletePersonRq>
+   </soap:Body>
+</soap:Envelope>

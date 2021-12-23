@@ -1,0 +1,27 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+  <soap:Body>
+    <fimi:POSRequestRq>
+      <fimi:Request TransactionUserData="MerchID123">
+        <!--You may enter the following 115 items in any order-->
+        <!--Optional:-->
+        <fimi1:TranType>200</fimi1:TranType>
+        <fimi1:TranCode>133</fimi1:TranCode>
+        <fimi1:TermName>POS_WM</fimi1:TermName>
+        <!--<fimi1:TermName>88125629</fimi1:TermName>-->
+        <!--<fimi1:RetailerName>?</fimi1:RetailerName>-->
+        <fimi1:PAN>4012001037141112</fimi1:PAN>
+        <fimi1:FromAcctType>1</fimi1:FromAcctType>
+        <!--?-->
+        <fimi1:Amount>333</fimi1:Amount>
+        <fimi1:Currency>643</fimi1:Currency>
+        <fimi1:Condition>0</fimi1:Condition>
+        <fimi1:EntryMode>12</fimi1:EntryMode>
+        <fimi1:P2PSourceOfFunds>5</fimi1:P2PSourceOfFunds>
+        <!--<fimi1:TranNumber>99074153</fimi1:TranNumber>-->
+        <!--<fimi1:DraftCapture>?</fimi1:DraftCapture>-->
+	<fimi1:P2PSenderData>Merchant123</fimi1:P2PSenderData>
+      </fimi:Request>
+    </fimi:POSRequestRq>
+  </soap:Body>
+</soap:Envelope>

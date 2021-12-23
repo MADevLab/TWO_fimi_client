@@ -1,0 +1,22 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:CreateAccountRq>
+         <fimi:Request><!--Par. 'Comment': 1-Acc. type, 4-BranchId. Not send. Implementation inside TWO--><!--Comment="1~4"-->
+
+	    <!--Mandatory:-->
+            <fimi1:PersonExtId>9998748</fimi1:PersonExtId><!--KKBID--><!--45454559-->
+            <fimi1:Status>3</fimi1:Status><!--3 – Open primary account-->
+            <fimi1:Type>1</fimi1:Type><!--1 – checking-->
+	    <fimi1:Currency>810</fimi1:Currency>
+
+	    <!--Optional:-->
+            <!--<fimi1:PersonID>1000032</fimi1:PersonID>--><!--Not send. Implementation inside TWO-->
+            <!--<fimi1:Account>40914810100000000002</fimi1:Account>--><!----><!--Not send. Implementation inside TWO-->
+            <!--<fimi1:AvailBalance>0</fimi1:AvailBalance>            
+            <fimi1:LedgerBalance>0</fimi1:LedgerBalance>-->
+
+         </fimi:Request>
+      </fimi:CreateAccountRq>
+   </soap:Body>
+</soap:Envelope>

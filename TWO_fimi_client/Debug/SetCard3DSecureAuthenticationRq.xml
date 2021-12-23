@@ -1,0 +1,16 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:SetCard3DSecureAuthenticationRq>
+         <fimi:Request>
+            <!--Mandatory:-->
+            <fimi1:CardUID>D308C3646AA3290BE053053010AC1D9A</fimi1:CardUID>
+            <!--Optionaly:-->
+            <!--
+            <fimi1:ECUseCardSettingsAuth>1</fimi1:ECUseCardSettingsAuth>
+            <fimi1:ECNeedDynPwdAuth>1</fimi1:ECNeedDynPwdAuth>
+            -->
+         </fimi:Request>
+      </fimi:SetCard3DSecureAuthenticationRq>
+   </soap:Body>
+</soap:Envelope>

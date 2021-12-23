@@ -1,0 +1,7 @@
+C:\Program Files\PROJECT\TWO_fimi_client\TWO_fimi_client\bin\Debug\TWO_fimi_client.exe
+C:\Program Files\PROJECT\TWO_fimi_client\TWO_fimi_client\bin\Debug\TWO_fimi_client.pdb
+C:\Program Files\PROJECT\TWO_fimi_client\TWO_fimi_client\obj\Debug\TWO_fimi_client.csproj.CoreCompileInputs.cache
+C:\Program Files\PROJECT\TWO_fimi_client\TWO_fimi_client\obj\Debug\TWO_fimi_client.exe
+C:\Program Files\PROJECT\TWO_fimi_client\TWO_fimi_client\obj\Debug\TWO_fimi_client.pdb
+C:\Program Files\PROJECT\TWO_fimi_client\TWO_fimi_client\bin\Debug\TWO_fimi_client.exe.config
+C:\Program Files\PROJECT\TWO_fimi_client\TWO_fimi_client\obj\Debug\TWO_fimi_client.csprojAssemblyReference.cache

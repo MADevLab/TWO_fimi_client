@@ -1,0 +1,11 @@
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:m0="http://schemas.compassplus.com/two/1.0/fimi_types.xsd" xmlns:m1="http://schemas.compassplus.com/two/1.0/fimi.xsd">
+  <env:Body>
+    <m1:CreatePersonRp>
+      <m1:Response NextChallenge="********" Response="1" TranId="33149" Ver="16.12" Product="FIMI">
+        <m0:PersonId>1000031</m0:PersonId>
+        <!--<PersonExtId xmlns="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">1000099</PersonExtId>-->
+        <m0:PersonExtId xmlns:m0="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">1000099</m0:PersonExtId>
+      </m1:Response>
+    </m1:CreatePersonRp>
+  </env:Body>
+</env:Envelope>

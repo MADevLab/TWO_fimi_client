@@ -1,0 +1,11 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:GetTransInfoRq>
+         <fimi:Request>
+            <fimi1:Id>10648470</fimi1:Id>
+            <!--<fimi1:TranNumber>121118</fimi1:TranNumber>-->
+         </fimi:Request>
+      </fimi:GetTransInfoRq>
+   </soap:Body>
+</soap:Envelope>

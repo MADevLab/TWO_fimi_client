@@ -1,0 +1,26 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:AddCMSAbonentRq>
+         <fimi:Request>
+            <!--Mandatory:-->
+            <fimi1:CardUID>D308C3646AA3290BE053053010AC1D9A</fimi1:CardUID>
+            <fimi1:AlternativeMessaging>
+               <fimi1:Row>
+                  <fimi1:Address>7999999</fimi1:Address>
+                  <!--Optionaly:-->
+		  <!--
+                  <fimi1:Channel>TWMG</fimi1:Channel>                  
+                  <fimi1:Scheme>MAIN</fimi1:Scheme>
+                  <fimi1:UseForDynAuth>1</fimi1:UseForDynAuth>
+                  <fimi1:IsDefault>1</fimi1:IsDefault>
+                  <fimi1:Broadcast>1</fimi1:Broadcast>
+                  -->
+               </fimi1:Row>
+            </fimi1:AlternativeMessaging>
+            <!--Optional:-->
+            <fimi1:NeedNotify>0</fimi1:NeedNotify>
+         </fimi:Request>
+      </fimi:AddCMSAbonentRq>
+   </soap:Body>
+</soap:Envelope>

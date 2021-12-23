@@ -1,0 +1,32 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:CreatePersonRq>
+         <fimi:Request>
+	    <!--Constants-->
+            <!--<fimi1:InstName>KKB</fimi1:InstName>--><!--Optionaly. Implementation inside TWO-->     
+            <!--<fimi1:BranchId>4</fimi1:BranchId>--><!--Optionaly. Implementation inside TWO-->
+
+            <!--Mandatory:-->
+            <!--<fimi1:PersonId>1000005</fimi1:PersonId>--><!--Not send. Implementation inside TWO--><!--+-->
+	    <fimi1:PersonExtId>50000002</fimi1:PersonExtId><!--KKBID--><!--waiting ver. 5.3.32.1--><!--Integrity checks+-->
+            <fimi1:FIO>唐納德·約翰·特朗普</fimi1:FIO>
+            <fimi1:Sex>M</fimi1:Sex>
+            <fimi1:VIP>0</fimi1:VIP>
+            <fimi1:IdentType>1</fimi1:IdentType><!--Constant (1-passport)-->
+            <fimi1:Identity>001011112</fimi1:Identity><!--Variable--><!--Mask (<nnnn> <nnnnnn>)-->
+            <fimi1:ResidentCountry>156</fimi1:ResidentCountry>
+            <fimi1:Birthday>1946-01-14T00:00:00</fimi1:Birthday><!--Format of FIMI term. ver. 3-->
+            
+            <fimi1:SecretWord>Бульдозер</fimi1:SecretWord>--><!--Use AddPersonConfidentialInfoRq ?-->
+            
+            <!--Optional:-->
+            <!--<fimi1:FirstName>Petr</fimi1:FirstName>--><!--Optionaly. Send in Latin characters (for cardholder name) only!-->
+            <!--<fimi1:LastName>Noviy</fimi1:LastName>--><!--Optionaly. Send in Latin characters (for cardholder name) only!-->
+            <fimi1:Birthplace>Гор.Новые Чешуйки</fimi1:Birthplace>
+            <fimi1:PostalCode>100200</fimi1:PostalCode>
+            <fimi1:PhoneNumber>79260000102</fimi1:PhoneNumber>
+         </fimi:Request>
+      </fimi:CreatePersonRq>
+   </soap:Body>
+</soap:Envelope>

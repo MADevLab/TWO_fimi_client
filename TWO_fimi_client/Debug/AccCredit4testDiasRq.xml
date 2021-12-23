@@ -1,0 +1,14 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:AcctCreditRq>
+         <fimi:Request Comment="Оплата % по депозиту закл.с Прозоровой В.К.№ ДФЛ/МФ/010221/0003 от 01.02.2021 г. ставка 2,5% годовых"><!--~Зачисление заработной платы~ за сентябрь 2019-->
+            <fimi1:Account>40817810000015001429</fimi1:Account><!--40817810300000013009-->
+            <fimi1:Amount>100</fimi1:Amount>
+            <fimi1:ChangeReason>Номер</fimi1:ChangeReason><!--306-->
+            <fimi1:TranNumber>121120</fimi1:TranNumber>
+            <fimi1:IgnoreImpact>1</fimi1:IgnoreImpact>
+         </fimi:Request>
+      </fimi:AcctCreditRq>
+   </soap:Body>
+</soap:Envelope>

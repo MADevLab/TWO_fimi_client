@@ -1,0 +1,9 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.w3.org/2003/05/soap-envelope" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Envelope">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="Body"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

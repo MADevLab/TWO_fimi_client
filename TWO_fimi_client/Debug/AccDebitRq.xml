@@ -1,0 +1,17 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:AcctDebitRq>
+         <fimi:Request>
+            <!--Mandatory:-->
+            <fimi1:CardUID>CC983668DE62F08DE053053010AC3676</fimi1:CardUID>
+            <fimi1:Amount>5</fimi1:Amount>
+            <fimi1:TranNumber>7</fimi1:TranNumber>
+            <!--Optionaly:-->            
+            <fimi1:ChangeReason>Перевод в WMP</fimi1:ChangeReason>
+            <!--<fimi1:Account>40817810300000013009</fimi1:Account>-->
+            <!--<fimi1:IgnoreImpact>1</fimi1:IgnoreImpact>-->
+         </fimi:Request>
+      </fimi:AcctDebitRq>
+   </soap:Body>
+</soap:Envelope>

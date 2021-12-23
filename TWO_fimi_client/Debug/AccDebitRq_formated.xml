@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope
+    xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd"
+    xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+    <soap:Body>
+        <fimi:AcctDebitRq>
+            <fimi:Request Ver="$Ver" Product="$Product" Session="$Session" Clerk="$Clerk" Password="$Password">
+                <fimi1:Account>40817810300000013009</fimi1:Account>
+                <fimi1:Amount>5000</fimi1:Amount>
+                <fimi1:ChangeReason>Зарплата</fimi1:ChangeReason>
+            </fimi:Request>
+        </fimi:AcctDebitRq>
+    </soap:Body>
+</soap:Envelope>

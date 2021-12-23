@@ -1,0 +1,24 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:GetCardStatementRq>
+         <fimi:Request>
+            <!--Mandatory:-->
+            <fimi1:CardUID>CC091D7220D8A7F7E053162F10ACEB67</fimi1:CardUID>
+            <!--Optional:-->            
+<!--
+            <fimi1:FromTime>2021-10-10T10:00:00</fimi1:FromTime>
+            <fimi1:ToTime>2021-10-20T17:59:59</fimi1:ToTime>
+-->
+            <!--<fimi1:MBR>0</fimi1:MBR>-->
+            
+            <fimi1:Count>10</fimi1:Count>
+<!--
+            <fimi1:MBR>?</fimi1:MBR>
+            <fimi1:PAN>?</fimi1:PAN>
+	    -->
+            
+         </fimi:Request>
+      </fimi:GetCardStatementRq>
+   </soap:Body>
+</soap:Envelope>

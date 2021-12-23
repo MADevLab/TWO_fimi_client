@@ -1,0 +1,42 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:SetCardLimitsRq>
+         <fimi:Request>
+            <!--Mandatory:-->
+            <fimi1:CardUID>CA746DEF2BC648B6E053162F10AC6287</fimi1:CardUID>
+            <!--Optional:-->
+            <!--<fimi1:NeedNotify>0</fimi1:NeedNotify>-->
+            <fimi1:Limits>
+               <fimi1:Row>
+                  <!--ATM/PVN  cash withdrawal limit (Day)-->
+                  <fimi1:LimitId>1001</fimi1:LimitId>                  
+                  <fimi1:Max>150000</fimi1:Max>
+                  <fimi1:PeriodType>0</fimi1:PeriodType>
+                  <fimi1:Period>1440</fimi1:Period>
+               </fimi1:Row>
+               <fimi1:Row>
+                  <!--P2P Debit (Day)-->
+                  <fimi1:LimitId>1005</fimi1:LimitId>                  
+                  <fimi1:Max>300000</fimi1:Max>
+                  <fimi1:PeriodType>0</fimi1:PeriodType>
+                  <fimi1:Period>1440</fimi1:Period>
+               </fimi1:Row>
+               <fimi1:Row>
+                  <!--P2P Debit (Month)-->
+                  <fimi1:LimitId>1006</fimi1:LimitId>
+                  <fimi1:Max>1500000</fimi1:Max>
+                  <fimi1:PeriodType>2</fimi1:PeriodType>
+                  <fimi1:Period>0</fimi1:Period>
+               </fimi1:Row>
+               <fimi1:Row>
+                  <!--P2P Debit (1-Trs)-->
+                  <fimi1:LimitId>1017</fimi1:LimitId>
+                  <fimi1:Max>75000</fimi1:Max>
+                  <fimi1:PeriodType>5</fimi1:PeriodType>
+               </fimi1:Row>
+            </fimi1:Limits>
+         </fimi:Request>
+      </fimi:SetCardLimitsRq>
+   </soap:Body>
+</soap:Envelope>

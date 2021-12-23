@@ -1,0 +1,32 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:GetCardInfoRq>
+         <fimi:Request>
+            <!--You may enter the following 9 items in any order-->
+            <!--Mandatory:-->
+            <fimi1:CardUID>CC091D7220D1A7F7E053162F10ACEB67</fimi1:CardUID>
+            <!--Optional:-->
+        <!--<fimi1:MBR>?</fimi1:MBR>            
+            <fimi1:PAN>?</fimi1:PAN>
+            <fimi1:Type>?</fimi1:Type>
+            <fimi1:PersonId>?</fimi1:PersonId>-->
+            <fimi1:RequiredData>1</fimi1:RequiredData><!--Mask  -    Bit
+							  1     -    001 - FullPAN, MBR, CardUID;
+						          2	-    010 - Card Status;
+							  3     -    011 - FullPAN, MBR, CardUID, Card Status;
+							  4	-    100 - Accounts;
+							  5	-    101 - FullPAN, MBR, CardUID, Accounts;
+							  6	-    110 - Card Status, Accounts;
+                                                          7	-    111 - FullPAN, MBR, CardUID, Card Status, Accounts-->
+        <!--<fimi1:Status>
+               <fimi1:Row>
+                  <fimi1:Value>?</fimi1:Value>
+               </fimi1:Row>
+            </fimi1:Status>
+            <fimi1:ExpirationDate>?</fimi1:ExpirationDate>
+            <fimi1:NameOnCard>?</fimi1:NameOnCard>-->
+         </fimi:Request>
+      </fimi:GetCardInfoRq>
+   </soap:Body>
+</soap:Envelope>

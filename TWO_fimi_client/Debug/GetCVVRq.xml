@@ -1,0 +1,17 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:GetCVVRq>
+         <fimi:Request>
+            <!--Mandatory:-->
+            <!--<fimi1:CardUID>A3436F23B114BEECE0538F5FA8C03555</fimi1:CardUID>-->
+            <!--Optional:-->
+            <!--<fimi1:IsCVV2>1</fimi1:IsCVV2>-->
+            <!--Optional:-->
+            <!--<fimi1:ExpDate>?</fimi1:ExpDate>-->
+            <fimi1:PAN>4038290218569833</fimi1:PAN>
+            <fimi1:MBR>0</fimi1:MBR>
+         </fimi:Request>
+      </fimi:GetCVVRq>
+   </soap:Body>
+</soap:Envelope>

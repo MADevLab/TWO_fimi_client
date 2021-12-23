@@ -1,0 +1,16 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:DeleteAccountRq>
+         <fimi:Request>            
+            <!--Optional:-->
+            <!--<fimi1:InstName>KKB</fimi1:InstName>-->
+            <!--Mandatory if not send "Account" tag-->
+	    <fimi1:CardUID>D290F0C05FA72F83E053053010AC1E9C</fimi1:CardUID>
+            <!--Optional:-->
+            <!--<fimi1:Account>40914810300014000079</fimi1:Account>--><!---->
+            <!--<fimi1:Force>1</fimi1:Force>-->
+         </fimi:Request>
+      </fimi:DeleteAccountRq>
+   </soap:Body>
+</soap:Envelope>

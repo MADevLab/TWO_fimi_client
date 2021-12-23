@@ -1,0 +1,21 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:CreateVCardRq>
+         <fimi:Request>
+	   <!--Constants-->
+           <!--<fimi1:BranchId>4</fimi1:BranchId>--><!--Optionaly. Implementation inside TWO-->
+           <!--Mandatory:-->
+           <fimi1:PersonExtId>45454555</fimi1:PersonExtId><!--KKBID-->
+           <fimi1:CardProductId>2399</fimi1:CardProductId>
+           <fimi1:CardProfile>4</fimi1:CardProfile>
+
+	    <!--Optional:-->
+           <!--<fimi1:Account>40914810100014000059</fimi1:Account>--><!--Not send. Implementation inside TWO-->
+           <!--<fimi1:Expiration>2028-07-28T00:00:00</fimi1:Expiration>--><!--Not send. Implementation inside TWO - 12 months (rounding up to the last day of the month). Cannot send date more than configured in TWO!-->
+           <!--<fimi1:NameOnCard>VASILIY PUPKIN</fimi1:NameOnCard>--><!--format: <FirstName>space<LastName>. If the field is not send then the FIO is translated for NameOnCard-->
+           <!--<fimi1:ExternalObjectId>7777770</fimi1:ExternalObjectId>--><!--If the field is not send then will be get sys_guid() value--><!--waiting ver. 5.3.32.1-->
+          </fimi:Request>
+      </fimi:CreateVCardRq>
+   </soap:Body>
+</soap:Envelope>

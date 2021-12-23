@@ -1,0 +1,28 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:CreatePersonRq>
+         <fimi:Request>
+            <fimi1:InstName>KKB</fimi1:InstName><!--Constant-->
+            <fimi1:BranchId>4</fimi1:BranchId><!--Constant-->
+
+            <fimi1:PersonId>1000005</fimi1:PersonId><!--Not send. Implementation inside TWO--><!--+-->
+	    <fimi1:PersonExtId>454545470</fimi1:PersonExtId><!--KKBID--><!--waiting ver. 5.3.32.1--><!--Integrity checks+-->
+            <fimi1:FIO>בורשטיין אלכסיי ולדימירוביץ</fimi1:FIO>
+            <fimi1:Sex>M</fimi1:Sex>
+            <fimi1:VIP>0</fimi1:VIP>
+            <fimi1:IdentType>1</fimi1:IdentType><!--Constant (1-passport)-->
+            <!--<fimi1:Identity>9687 587261</fimi1:Identity>--><!--Variable--><!--Mask (<nnnn> <nnnnnn>)-->
+            <fimi1:Birthday>01.01.1990</fimi1:Birthday>
+            
+            <fimi1:SecretWord>SecretWord - WMID</fimi1:SecretWord>--><!--Use AddPersonConfidentialInfoRq-->
+            
+            <!--Optional:-->
+            <fimi1:Birthplace>Новые Чешуйки</fimi1:Birthplace>            
+            <fimi1:ResidentCountry>840</fimi1:ResidentCountry>
+            <fimi1:PostalCode>100200</fimi1:PostalCode>
+            <fimi1:PhoneNumber>79260000102</fimi1:PhoneNumber>
+         </fimi:Request>
+      </fimi:CreatePersonRq>
+   </soap:Body>
+</soap:Envelope>

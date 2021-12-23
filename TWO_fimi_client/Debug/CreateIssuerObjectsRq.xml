@@ -1,0 +1,42 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:fimi="http://schemas.compassplus.com/two/1.0/fimi.xsd" xmlns:fimi1="http://schemas.compassplus.com/two/1.0/fimi_types.xsd">
+   <soap:Header/>
+   <soap:Body>
+      <fimi:CreateIssuerObjectsRq>
+         <fimi:Request>            
+            <fimi1:InstName>KKB</fimi1:InstName><!--Constant-->
+            <!--<fimi1:PersonId>1000005</fimi1:PersonId>--><!--Not send. Implementation inside TWO--><!--+-->
+	    <fimi1:PersonExtId>454545464</fimi1:PersonExtId><!--KKBID--><!--waiting ver. 5.3.32.1--><!--Integrity checks+-->
+            <fimi1:PersonFIO>Пупкин Васийлий Васильевич11</fimi1:PersonFIO>
+            <!--<fimi1:PersonIdentType>1</fimi1:PersonIdentType><!-Constant (1-passport)->
+            <fimi1:PersonIdentity>9687 587260</fimi1:PersonIdentity><!-Variable--><!--Mask (<nnnn> <nnnnnn>)-->
+       	    <fimi1:PersonPassword>Secret</fimi1:PersonPassword><!--Variable-->          
+            <fimi1:PersonVIP>0</fimi1:PersonVIP>
+            <fimi1:PersonSex>M</fimi1:PersonSex>
+            <fimi1:PersonBirthDay>01.01.1990</fimi1:PersonBirthDay>
+            <fimi1:PersonResidentCountry>643</fimi1:PersonResidentCountry>
+	    <fimi1:PersonUserFields><!--Variable-->
+               <fimi1:Row>
+                  <fimi1:Name>SNILS</fimi1:Name>
+                  <fimi1:TextValue>12345678912345</fimi1:TextValue>
+               </fimi1:Row>
+               <fimi1:Row>
+                  <fimi1:Name>INN</fimi1:Name>
+                  <fimi1:TextValue>9876543210</fimi1:TextValue>
+               </fimi1:Row>
+            </fimi1:PersonUserFields>                       
+
+            <!--<fimi1:Account>40914810800014000003</fimi1:Account>--><!--implementation inside TWO or getting from request--><!--+-->
+            <fimi1:AcctType>1</fimi1:AcctType><!--Constant-->
+            <fimi1:AcctStatus>3</fimi1:AcctStatus><!--Constant-->
+            <fimi1:AcctCurrency>810</fimi1:AcctCurrency>
+            <fimi1:AcctBranchId>4</fimi1:AcctBranchId><!--Constant-->
+	    <fimi1:Amount>0</fimi1:Amount>
+
+            <fimi1:CardExternalObjectId>4667640441500013</fimi1:CardExternalObjectId><!--waiting ver. 5.3.32.1-->
+            <fimi1:CardProfile>4</fimi1:CardProfile>
+            <fimi1:CardBranchId>4</fimi1:CardBranchId><!--Constant-->
+            <fimi1:CardProductId>2399</fimi1:CardProductId>            	    
+         </fimi:Request>
+      </fimi:CreateIssuerObjectsRq>
+   </soap:Body>
+</soap:Envelope>
